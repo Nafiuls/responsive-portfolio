@@ -33,7 +33,6 @@ header {
 }
 
 nav {
-  width: 80%;
   max-width: 1332px;
   margin: auto;
   display: flex;
@@ -56,10 +55,10 @@ nav {
 .navigation {
   display: flex;
   align-items: center;
+  gap: 60px;
 }
 
 .navigation a {
-  margin-right: 60px;
   text-decoration: none;
   color: #474747;
   font-size: 20px;
@@ -245,127 +244,175 @@ nav {
   margin-top: 50px;
 }
 
-
-footer{
+footer {
   margin-top: 200px;
   background-color: #fff8f3;
   padding: 130px 230px;
 }
 
-.contact{
+.contact {
   display: flex;
   gap: 80px;
   justify-content: space-between;
 }
 
-.text, .contact-form{
+.text,
+.contact-form {
   width: 50%;
 }
 
-.text h1{
+.text h1 {
   color: var(--Dark-01, #181818);
-font-family: Open Sans;
-font-size: 35px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-margin-bottom: 20px;
+  font-family: Open Sans;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 20px;
 }
 
-.text P{
+.text P {
   margin-bottom: 30px;
 }
 
-.social-media{
+.social-media {
   display: flex;
   column-gap: 25px;
 }
 
-.contact-form h1{
+.contact-form h1 {
   color: var(--Dark-01, #181818);
-font-family: Open Sans;
-font-size: 35px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-margin-bottom: 30px;
+  font-family: Open Sans;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 30px;
 }
 
-form{
+form {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   row-gap: 25px;
 }
 
-form > input{
+form > input {
   border: none;
   padding: 10px 0px 10px 20px;
   outline: none;
   border-radius: 5px;
-
 }
 
-form > textarea{
-  padding: 20px 0px 0px 20px ;
+form > textarea {
+  padding: 20px 0px 0px 20px;
   font-size: 18px;
   outline: none;
   border-radius: 5px;
   border: none;
 }
 
-
-
-
-
-.hide{
+.hide {
   display: none;
 }
 
+li{
+  list-style: none;
+}
 
 /* smaller device responsive styles <576px */
 
-@media screen and (max-width:576px) {
-
-  .skills, .resume-flex,.footer-flex{
+@media screen and (max-width: 576px) {
+   nav,
+   .buttons,
+   .navigation,
+  .banner,
+  .skills,
+  .resume-flex,
+  .footer-flex,
+  .about-details {
     flex-direction: column;
-    row-gap:10px ;
-    
+    row-gap: 10px;
   }
 
-  .box-skills{
-    padding: 7px;
+ li > a{
+    margin-right: 0px;
+  }
+
+  header{
+    background-image: none;
+  }
+
+  .navigation{
+    justify-content: center;
+  }
+
+
+  .about{
+    padding: 10px;
+  }
+
+  .box-skills {
+    padding: 10px;
     margin: auto;
   }
 
-
-  footer{
-    padding: 8px;
+  footer {
+    padding: 10px;
   }
 
-  .contact{
+  .contact {
     flex-direction: column;
   }
-  .text,.contact-form{
+  .text,
+  .contact-form {
     width: 100%;
   }
-
-  
-
-
-  
-  
 }
 
-@media screen and (min-width:576px) and (max-width:960px) {
-  .skills, .resume-flex {
-    flex-direction: row;
+@media screen and (min-width: 576px) and (max-width: 960px) {
+  nav,
+   .buttons,
+   .navigation,
+  .banner,
+  .skills,
+  .resume-flex,
+  .footer-flex,
+  .about-details {
+    flex-direction: column;
+    row-gap: 10px;
   }
-  .box-skills{
-    padding: 7px;
+
+  
+
+  header{
+    background-image: none;
+  }
+
+  .navigation{
+    justify-content: center;
+  }
+
+
+  .about{
+    padding: 10px;
+  }
+
+  .box-skills {
+    padding: 10px;
     margin: auto;
-   
   }
-  
+
+  footer {
+    padding: 10px;
+  }
+
+  .contact {
+    flex-direction: column;
+  }
+  .text,
+  .contact-form {
+    width: 100%;
+  }
+ 
+
 }
-
-
